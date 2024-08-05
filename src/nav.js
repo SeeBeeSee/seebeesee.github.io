@@ -22,13 +22,13 @@ $(document).ready(function () {
   if (currentPage === "index.html") {
     // append home link
     $(".navigation-bar").append(
-      "<button><a href='index.html'>Home</a></button>"
+      "<button class='nav-button'><a href='index.html'>Home</a></button>"
     );
 
     // append remaining pages
     pages.forEach((pageData) => {
       let newButton =
-        "<button><a href='./pages/" +
+        "<button class='nav-button'><a href='./pages/" +
         pageData.link +
         "'>" +
         pageData.title +
@@ -38,13 +38,13 @@ $(document).ready(function () {
   } else {
     // append home link
     $(".navigation-bar").append(
-      "<button><a href='../index.html'>Home</a></button>"
+      "<button class='nav-button'><a href='../index.html'>Home</a></button>"
     );
 
     // append remaining pages
     pages.forEach((pageData) => {
       let newButton =
-        "<button><a href='" +
+        "<button class='nav-button'><a href='" +
         pageData.link +
         "'>" +
         pageData.title +
